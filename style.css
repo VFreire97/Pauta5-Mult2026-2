@@ -1,7 +1,4 @@
-/* ==================================================== */
-/* 1. FONTE EXTERNA E VARIÁVEIS DE CORES                 */
-/* ==================================================== */
-/* Importamos a fonte 'Montserrat' do Google Fonts para legibilidade excelente */
+
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
 
 :root {
@@ -17,9 +14,6 @@
   --texto-suave: #444444;
 }
 
-/* ==================================================== */
-/* 2. REGRAS GERAIS E CORPO DA PÁGINA (BODY)            */
-/* ==================================================== */
 * {
   margin: 0;
   padding: 0;
@@ -29,7 +23,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: var(--azul-fundo);
-  /* Gradiente suave do azul da bandeira para um azul mais escuro */
+  
   background-image: linear-gradient(180deg, var(--azul-principal) 0%, var(--azul-fundo) 100%);
   color: var(--branco);
   min-height: 100vh;
@@ -37,9 +31,6 @@ body {
   line-height: 1.6;
 }
 
-/* ==================================================== */
-/* 3. CABEÇALHO DA PÁGINA (HEADER)                      */
-/* ==================================================== */
 header {
   text-align: center;
   max-width: 800px;
@@ -60,9 +51,6 @@ header p {
   opacity: 0.95;
 }
 
-/* ==================================================== */
-/* 4. DISPOSIÇÃO DOS CARTÕES (MAIN)                     */
-/* ==================================================== */
 main {
   display: flex;
   flex-wrap: wrap; /* Permite que os cartões fiquem um abaixo do outro em telas menores */
@@ -72,10 +60,7 @@ main {
   margin: 0 auto;
 }
 
-/* ==================================================== */
-/* 5. ESTILO DOS CARTÕES DE CONTEÚDO (.card)            */
-/* ==================================================== */
-/* Fundo BRANCO para dar contraste total ao texto legível */
+
 .card {
   background-color: var(--branco);
   color: var(--texto-escuro);
@@ -112,10 +97,6 @@ main {
   margin-bottom: 1.2rem;
 }
 
-/* ==================================================== */
-/* 6. BOTÕES DOS CARTÕES                                */
-/* ==================================================== */
-/* Botão "Saiba mais" (Verde com texto branco) */
 .btn-modal {
   background-color: var(--verde-bandeira);
   color: var(--branco);
@@ -154,10 +135,6 @@ main {
   transform: translateY(-2px);
 }
 
-/* ==================================================== */
-/* 7. JANELA MODAL (FLUTUANTE)                          */
-/* ==================================================== */
-/* Regra fundamental: esconde o modal enquanto tiver a classe 'hidden' */
 .hidden {
   display: none !important;
 }
